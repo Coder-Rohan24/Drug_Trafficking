@@ -10,6 +10,7 @@
           <title>Drug Trafficking</title>
 
           <!-- Font awesome -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
           <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
           <!-- Animate.css -->
@@ -25,7 +26,166 @@
                /* If you wish to remove the astonish.js file, then also be sure to remove these styles. */
                /* Container for the image with the fade effect */
 
-
+               ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
                .astonish {
                     visibility: visible;
                }
@@ -43,8 +203,11 @@
      <body>
           <!-- Main Navigation -->
           <nav class="main-nav" id="main-nav" style="height: 100px;display: flex;justify-content: center;">
-               <div class="content-wrapper-sm">
-                    <a href="#" class="navbar-brand">DrugOps</a>
+               <div class="content-wrapper-sm" style="display:flex;justify-content: space-between;">
+                    <div style="display: grid;">
+                    <div><img src="img/logo.png" style="height:60px;"/></div>
+                    <div style="justify-content: center;"><a href="#" class="navbar-brand">DrugOps</a></div>
+                    </div>
                     <div id="menu-button">
                          <div class="bar1"></div>
                          <div class="bar2"></div>
@@ -56,7 +219,7 @@
                          <li><a href="#reserve">Report a Channel</a></li>
                          <li><a href="#contact">Contact Us</a></li>
                          <li><a href="faq.html">FAQ's</a></li>
-                         <li><a href="signin.html"><button class="btn_signin btn-outline-purple">Sign In</button></a></li>
+                         <li><a href="signin.html"><button class="btn_signin btn-outline-purple" style="padding:10px">Sign In</button></a></li>
                          
                     </ul>
                </div>
@@ -65,7 +228,7 @@
           <!-- Main header -->
           <header>
                <!-- First replaceble image -->
-               <img class="img-absolute " src="img/city.png" alt="City 1">
+               <img class="img-absolute " src="img/De.png" alt="City 1">
                <div class="wrapper astonish animated fadeInDown">
                     <h2 style="font-size:100px;"><strong>Drug</strong>Ops</h2>
                     <h2>Combatting Drug Trafficking on Social Media & Messaging Platforms. <br>
@@ -77,26 +240,28 @@
           <main>
                <div class="content-wrapper" id="about">
                     <!-- second replaceble image -->
-                    <img class="img-absolute" src="img/city2.png" alt="City 2">
+                    <img class="img-absolute" src="img/drug2.jpg" alt="City 2">
                     <div class="grid">
                          <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
-                              <h2 class="section-title">About CityScapes</h2>
-                              <p>CityScapes is a fully responsive and customizable landing page template. All images can easily be replaced from the html side, without having to dig through the css.</p>
-                              <p>The full version of this template is available at Github and it comes with the SASS files in order to provide quicker customization features, for those who are developers.</p>
-                              <p>Javascript files are also included, they are used to enhance the user experience but apart from the menu.js file, they are all optional.</p>
+                              <h2 class="section-title">About DrugOps</h2>
+                              <p>Welcome to DrugOps, a cutting-edge platform dedicated to keeping online communities safe from illegal drug activities. Our mission is to identify and report suspicious conversations that may involve drug-related content, ensuring a safer online environment for everyone.</p>
+                              <p>Using advanced machine learning models, our platform scans the conversations in Telegram, Instagram, and WhatsApp channels. When users provide a link to a public or group conversation, our system thoroughly analyzes the content to detect any signs of drug-related discussions, sales, or advertisements.</p>
+                              <p>At DrugOps we are committed to privacy and security.<a href="readmore.html" style="color:white;font-weight:bold">Read more...</a>
                          </div>
                     </div>
                </div>
 
-               <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
-                    <h2 class="section-title">Explore New Pathways</h2>
-                    <p>CityScapes is great for any travel agency or tour agency, that wishes to showcase the focal points of a city. If you want a unique looking landing page that has a unique artistic style that will attract clients, then this is the template for you. Go ahead and download it for free from Github.</p>
+               <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn" style="padding-top: 80px;
+    padding-bottom: 80px;">
+                    <h2 class="section-title">Investigate a Channel</h2>
+                    <p>If you’ve come across a Telegram, Instagram, or WhatsApp channel that you suspect might be involved in illegal drug-related activities, we encourage you to report it. By reporting suspicious channels, you’re helping us make the internet a safer place for everyone.</p>
+                    <p>Once reported, our advanced AI system will analyze the channel's conversations to detect any potential drug-related content. If the channel is found to be involved in illegal activities, appropriate action will be taken.</p>
                     <a href="report.html" class="btn btn-outline-purple">Report a Channel</a>
                </div>
 
                <div class="content-wrapper" id="contact">
                     <!-- Third replaceble image -->
-                    <img class="img-absolute" src="img/city3.png" alt="City 3">
+                    <img class="img-absolute" src="img/drug2.jpg" alt="City 3">
 
                     <!-- Custom form, important note: you will need additional code in order to make this form work -->
                     <form class="contact-form astonish" action="#" method="post" data-animation="fadeInRight">
@@ -136,22 +301,119 @@
           </main>
 
           <!-- Main footer -->
-          <footer>
-               <div class="content-wrapper-sm display-flex-between">
-                    <!-- Easily replaceble copyright information -->
-                    <small>Your copyright 2017.</small>
-
-                    <!-- Make sure to edit the links so that they go to your social media. -->
-                    <div class="social-links">
+          <footer class="footer-section">
+               <div class="container">
+                 <div class="footer-cta pt-5 pb-5">
+                   <div class="row" style="display: flex;justify-content: space-between;margin:20px">
+                     <div class="col-xl-4 col-md-4 mb-30">
+                       <div class="single-cta">
+                         <i class="fas fa-map-marker-alt"></i>
+                         <div class="cta-text">
+                           <h4>Find us</h4>
+                           <span>1010 Avenue, sw 54321, chandigarh</span>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 mb-30">
+                       <div class="single-cta">
+                         <i class="fas fa-phone"></i>
+                         <div class="cta-text">
+                           <h4>Call us</h4>
+                           <span>9876543210 0</span>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 mb-30">
+                       <div class="single-cta">
+                         <i class="far fa-envelope-open"></i>
+                         <div class="cta-text">
+                           <h4>Mail us</h4>
+                           <span>mail@info.com</span>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="footer-content pt-5 pb-5">
+                   <div class="row" style="display:flex;margin:20px">
+                     <div class="col-xl-4 col-lg-4 mb-50">
+                       <div class="footer-widget">
+                         <div class="footer-logo">
+                           <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                         </div>
+                         <div class="footer-text">
+                           <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                             elit,Lorem ipsum dolor sit amet.</p>
+                         </div>
+                         <div class="footer-social-icon">
+                           <span>Follow us</span>
+                           <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                           <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                           <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                       <div class="footer-widget">
+                         <div class="footer-widget-heading">
+                           <h3>Useful Links</h3>
+                         </div>
                          <ul>
-                              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
-                              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">about</a></li>
+                           <li><a href="#">services</a></li>
+                           <li><a href="#">portfolio</a></li>
+                           <li><a href="#">Contact</a></li>
+                           <li><a href="#">About us</a></li>
+                           <li><a href="#">Our Services</a></li>
+                           <li><a href="#">Expert Team</a></li>
+                           <li><a href="#">Contact us</a></li>
+                           <li><a href="#">Latest News</a></li>
                          </ul>
-                    </div>
+                       </div>
+                     </div>
+                     <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                       <div class="footer-widget">
+                         <div class="footer-widget-heading">
+                           <h3>Subscribe</h3>
+                         </div>
+                         <div class="footer-text mb-25">
+                           <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                         </div>
+                         <div class="subscribe-form">
+                           <form action="#">
+                             <input type="text" placeholder="Email Address">
+                             <button><i class="fab fa-telegram-plane"></i></button>
+                           </form>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
                </div>
-          </footer>
+               <div class="copyright-area">
+                 <div class="container">
+                   <div class="row">
+                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                       <div class="copyright-text">
+                         <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                       </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                       <div class="footer-menu">
+                         <ul>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">Terms</a></li>
+                           <li><a href="#">Privacy</a></li>
+                           <li><a href="#">Policy</a></li>
+                           <li><a href="#">Contact</a></li>
+                         </ul>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </footer>
 
           <!-- Scripts placed at the bottom for faster loading -->
           <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

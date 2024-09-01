@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DrugOps</title>
+    <style>
+        .main-nav {
+  display: block;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background: #111;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav > .content-wrapper-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.main-nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav .nav-links {
+  position: relative;
+  top: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  overflow: hidden;
+  height: 0;
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  .main-nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+}
+
+.main-nav .nav-links li {
+  margin: 1rem;
+  text-align: center;
+}
+
+.main-nav .nav-links li a {
+  color: #fefffe;
+  display: block;
+  text-decoration: none;
+}
+
+.main-nav .nav-open {
+  position: absolute;
+  top: 133%;
+  width: 100%;
+  display: block;
+  height: auto;
+  background: #111;
+}
+
+.main-nav .nav-open li {
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav .nav-open li a {
+  padding: 2rem 0;
+}
+
+.fixed-nav {
+  background: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+        /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #3498db;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.mission, .how-it-works, .privacy, .get-involved {
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    padding: 10px;
+    background: #f8f8f8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 4px solid #3498db;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+    </style>
+    
+</head>
+<body>
+    <nav class="main-nav" id="main-nav" style="position: relative;background-color: #3498db;">
+        <div class="content-wrapper-sm">
+             <a href="index.html" class="navbar-brand" style="color:white; font-size:xx-large" >DrugOps</a>
+             <div id="menu-button">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+             </div>
+             <ul class="nav-links" style="font-weight: bold;">
+                  <li><a href="index.html" style="color:white">Home</a></li>
+                  <li><a href="index.html#reserve" style="color:white;">Report a Channel</a></li>
+                  <li><a href="index.html#contact" style="color:white">Contact Us</a></li>
+                  <li><a href="index.html#faq" style="color:white">FAQ's</a></li>
+                  
+             </ul>
+        </div>
+   </nav>
+    <header>
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Learn more about our mission and how our platform works.</p>
+        </div>
+    </header>
+
+    <section class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>At DrugOps, we are dedicated to leveraging technology for the betterment of society by addressing one of the most pressing issues of our time—illegal drug activities online.</p>
+            <p>Our mission is to combat this by providing a tool that uses state-of-the-art machine learning models to analyze and identify drug-related content, thus contributing to a safer online environment.</p>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How Our Platform Works</h2>
+            <div class="step">
+                <h3>User Submission</h3>
+                <p>Users can submit links to public or group conversations from Telegram, Instagram, or WhatsApp that they suspect might contain illegal drug-related content.</p>
+            </div>
+            <div class="step">
+                <h3>Automated Data Collection</h3>
+                <p>Our system accesses the conversation data associated with the submitted link and extracts all available text-based communication for analysis.</p>
+            </div>
+            <div class="step">
+                <h3>Advanced Machine Learning Analysis</h3>
+                <p>Our AI model processes the collected data, detecting drug-related language and patterns. The model is continuously updated to adapt to new trends.</p>
+            </div>
+            <div class="step">
+                <h3>Suspicion Flagging and Reporting</h3>
+                <p>Flagged conversations are compiled into a report for further review. If no suspicious activity is detected, the conversation is marked as clean.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <div class="container">
+            <h2>Our Commitment to Privacy and Security</h2>
+            <p>We understand the importance of privacy and are committed to maintaining the highest standards of data protection.</p>
+            <ul>
+                <li><strong>Data Confidentiality:</strong> All conversation data is treated with strict confidentiality.</li>
+                <li><strong>Secure Processing:</strong> We use encryption methods to protect data during transmission and processing.</li>
+                <li><strong>No Unnecessary Data Retention:</strong> Data is securely deleted after analysis.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="get-involved">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <p>Whether you’re an individual or an organization, DrugOps is here to assist. Explore our platform and join us in making the internet a safer place.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DrugOps. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
